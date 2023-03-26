@@ -1,0 +1,27 @@
+:root{
+   --green:#7AA874;
+   --ligth-yellow:#F7DB6A;
+   --yellow:#EBB02D;
+   --pink:#D864A9;
+}
+
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style: none;
+}
+
+body{
+   width: 100%;
+}
+
+header{
+   background: var(--yellow);
+   display: flex;
+}
+
+header h1{
+   color:var(--pink)
+}
