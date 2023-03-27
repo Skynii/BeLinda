@@ -17,6 +17,8 @@
 
 body{
    width: 100%;
+   font-size: 18px;
+   font-family: var(--roboto);
 }
 
 header{
@@ -70,5 +72,20 @@ section .container{
 }
 section .container img{
    height: 350px;
+   border-radius: 25px;
+   border:4px dotted var(--green)
 }
 
+section .second-collum{
+   padding: 0 16px 0 16px;
+   margin-top:16px;
+}
+
+.second-collum h2{
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+.second-collum p{
+   margin: 5px;
+}
