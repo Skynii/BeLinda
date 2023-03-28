@@ -4,7 +4,7 @@
    --yellow:#EBB02D;
    --pink:#D864A9;
    --pacifico:'Pacifico', cursive;
-   --roboto:'Roboto', sans-serif;
+   --dosis: 'Dosis', sans-serif;
 }
 
 *{
@@ -18,7 +18,7 @@
 body{
    width: 100%;
    font-size: 18px;
-   font-family: var(--roboto);
+   font-family: var(--dosis);
 }
 
 header{
@@ -69,14 +69,15 @@ header .title{
 
 section .container{
    display: flex;
-   padding:20px 0 0 20px;
    max-width:1280px;
-   margin: 20px;
+   margin: 0 auto;;
    width: 100%;
+   align-items: center;
    
    
 }
-section .container img{
+.produtos .container img,
+.about .container img{
    height: 350px;
    border-radius: 25px;
    border:4px dotted var(--green);
@@ -91,11 +92,16 @@ section .second-collum{
 
 h2{
    text-align: center;
-   margin:10px
+   margin:10px;
+   font-family: var(--dosis);
+   font-size: 30px;
+   font-weight: 600;
+   color:var(--green)
 }
 
 .about p{
    margin: 5px;
+   font-family: var(--dosis);
 }
 
 .produtos,
@@ -105,9 +111,9 @@ h2{
 
 
 .imagens img{
-   width: 250px;
-   height: 200px;
-   border-radius: 15px;
+   width: 300px;
+   height: 250px;
+   border-radius: 10%;
    border:4px dotted var(--green)
 }
 
@@ -123,9 +129,73 @@ section .produto{
    padding: 10px;
    justify-content: space-between;
    text-align: center;
-
-
 }
+
+.contato{
+   background-color: var(--pink);
+}
+
+.contato h2{
+   color: var(--yellow);
+}
+
+.formulario form{
+   display:flex;
+   flex-direction: column;
+}
+
+form input,
+textarea,
+button{
+   margin:5px;
+   border: 2px solid var(--green);
+   border-radius: 5px;
+   font-family: var(--dosis);
+}
+
+input{
+   height: 25px;
+}
+
+textarea{
+   height: 70px;
+}
+
+button{
+   background-color:var(--ligth-yellow) ;
+   color:var(--pink);
+   font-weight: 600;
+   height: 30px;
+   font-size: 20px;
+}
+.logo img{
+   display:inline;
+   width: 50px;
+   margin:20px
+}
+.redes, .endereco, .formulario{
+   display:flex;
+   flex-direction: column;
+   padding-left: 50px;
+   margin-bottom: auto;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   
+}
+
+.end p{
+   margin:5px;
+}
+
+footer{
+   background-color: var(--yellow);
+   font-size: 20px;
+   color: var(--pink);
+   font-weight: 600;
+   text-align: center;
+}
+
 
 @media (min-width:1000px) {
    .imagens img{
